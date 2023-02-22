@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingHorizontal="0dp"
+    android:paddingTop="80dp"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="#C4E0F9"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDE7D9"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="#2E294E"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:inputType="text"
+                android:hint="Enter Username"
+                android:paddingHorizontal="20dp"
+                android:textColor="#2E294E"
+                android:backgroundTint="@color/black"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="20dp"
+                android:backgroundTint="@color/black"
+                android:textColor="#2E294E"
+                android:drawableStart="@drawable/baseline_password_24"
+                android:drawablePadding="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password?"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textEnd"
+                android:paddingRight="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:padding="7dp"
+                android:background="@drawable/login_btn"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <TextView
+                android:id="@+id/newUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New User?"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textEnd"
+                android:paddingRight="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
